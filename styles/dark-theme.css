@@ -1,0 +1,20 @@
+:root:has(#theme-toggle:checked) {
+  --color-primary:hsl( 35, 72%, 44% );
+  --color-default: #fff;
+  --color-secondary: #fff;
+  --color-tertiary: #9f9f9f;
+  --color-light-grey: #252525;
+  --color-white:hsl( 0, 0%, 9% );
+}
+.nav:has(#theme-toggle:checked) .hero .btns .watchBt .icon {
+  color: var(--color-default);
+}
+.nav:has(#theme-toggle:checked) ~ .chefs .cards .card .img::after {
+  background-image: url(../images/team-shape-dark.svg);
+}
+.nav:has(#theme-toggle:checked) ~ .chefs .cards .card {
+  background-color: var(--color-white);
+}
+.nav:has(#theme-toggle:checked) ~ .contact .info .card {
+  background-color: hsl( 0, 0%, calc(9% - 4%) );
+}
